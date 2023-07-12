@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home-top {
+    background-image: url(./images/background2.png);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-top-h1 {
+    margin: 0px;
+    font-size: 35px;
+    color: white;
+}
+
+.home-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 40px;
+    width: 70px;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-top-section > a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 10px;
+    color: black;
+    font-weight: 700;
+}
+
+.category-items-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+.category-item > img {
+    height: 30px;
+    width: 30px;
+}
+
+.category-item > h3 {
+    margin-bottom: -10px;
+}
+
+.category-item > p {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.category-items-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.post-ad-section {
+    background-color: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.post-ad-section > div {
+    display: flex;
+    align-items: center;
+}
+
+.post-ad-section > div > h2 {
+    margin: 20px;
+}
+
+.post-ad-button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    max-width: 300px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 0px 10px 0px 20px;
+}
+
+.post-ad-button  > img {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.post-ad-button > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.post-ad-about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.post-ad-about > h2 {
+    font-weight: 500;
+}
+
+.post-ad-about > p {
+    font-size: 13px;
+    max-width: 650px;
+    margin-top: -10px;
+}
+
+.search-section {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+}
+
+.search-searchbar {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 40px;
+}
+
+.search-searchbar > input {
+    outline: none;
+    border: none;
+}
+
+.search-searchbar > img {
+    height: 20px;
+}
+
+.search-filters > select {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.searchItems-card {
+    width: 250px;
+    -webkit-box-shadow: -1px 2px 71px -25px rgba(0,0,0,0.42);
+    -moz-box-shadow: -1px 2px 71px -25px rgba(0,0,0,0.42);
+    box-shadow: -1px 2px 71px -25px rgba(0,0,0,0.42);
+}
+
+.searchItems-card > img {
+    width: 250px;
+    height: 175px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.searchItems-card > h3 {
+    margin: 10px;
+}
+
+.searchItems-card > p {
+    font-size: 12px;
+    margin: 10px;
+}
+
+.searchItems-category {
+    color: #83878D;
+    font-weight: 600;
+}
+
+.search-card-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-searchbar > button {
+    background-color: transparent;
+    border: none;
+}
+
+.searchItems-location {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    gap: 90px;
+    margin: 10px;
+}
+
+.searchItems-location > div {
+    display: flex;
+    align-items: center;
+}
+
+.searchItems-location > div > p {
+    font-size: 12px;
+    color: #83878D;
+}
+
+.searchItems-location > p {
+    font-size: 12px;
+    color: #83878D;
+}
+
+.search-card-more{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.searchItems-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+/*     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; */
+    place-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.search-page-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    color: #83878D;
+    font-weight: 600;
+}
+
+.search-page-number > span {
+    margin: 10px;
+}
+
+.search-page-number > img {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sp-selected {
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.sp-number {
+    cursor: pointer;
+}
+
+/* Contact us page css */
+
+.contact-heading {
+    padding-top: 80px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+.contact-form {
+    margin: auto;
+    width: 60%;
+}
+
+.contact-form > form > p {
+    color: #797979;
+    font-weight: 600;
+}
+
+.contact-form-names {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-form-names > div {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.contact-form-names > div > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #797979;
+    outline: none;
+}
+
+.contact-form-names > div > p {
+    color: #797979;
+    font-weight: 600;
+}
+
+.contact-form > form > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #797979;
+    outline: none;
+}
+
+.contact-form > form > textarea {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact-submit {
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.contact-submit:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+/* Ad-details-section */
+
+.ad-details-backbtn{
+    padding-top: 80px;
+}
+
+.ad-details-backbtn > a > img {
+    margin-left: 50px;
+    height: 40px;
+}
+
+.ad-details-section{
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin:  auto;
+    width: 80%;
+    gap: 4rem;
+    margin-bottom: 60px;
+}
+
+.ad-details-images > img {
+    height: 400px;
+}
+
+.ad-details-images-sm {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ad-details-images-sm > img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.ad-details-details > h1 {
+    font-size: 40px;
+}
+
+.ad-details-details > p {
+    max-width: 400px;
+}
+
+.ad-details-details > h3 {
+    color: #797979;
+}
+
+.ad-details-details > p > span {
+    color: #797979;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.ad-details-contact {
+    display: flex;
+    align-items: center;
+}
+
+.ad-details-contact > span > a {
+    color: black;
+}
+
+.ad-details-contact > img {
+    height: 20px;
+}
+
+
+/* Login css */
+
+.login {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.login-left > h1{
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.login-back-btn {
+    margin: 20px;
+    height: 40px;
+}
+
+.login-left > img {
+    height: 275px;
+    max-width: 500px;
+    margin: 200px 20px 20px 20px;
+}
+
+.login-right {
+    background-color: #D5D5D5;
+    width: 100%;
+    height: 100vh;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-right > form > p {
+    font-weight: 500;
+}
+
+.login-right > form > input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-right > form >button {
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.login-right > p {
+    color: #83878D;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.login-right > p > a {
+    color: red;
+    font-weight: 500;
+}
+
+.login-back-btn-2 {
+    display: none;
+}
+
+/* create ad page */
+.create-ad-backbtn > img {
+    padding-top: 70px;
+    height: 30px;
+    display: -webkit-box;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.create-ad-section {
+    margin: 10px 10px 20px 40px;
+}
+
+.add-img-text > p {
+    color: #797979;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.add-image-icon {
+    border-style: dotted;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-image-icon > img{
+    height: 30px;
+}
+
+.add-image-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.create-ad-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.create-ad-details > p {
+    color: #797979;
+    font-weight: 600;
+}
+
+.create-ad-details-p {
+    width: 220px;
+    margin-top: 40px;
+}
+
+.create-ad-details > input {
+    height: 30px;
+    width: 600px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #D5D5D5;
+    padding: 5px;
+}
+
+.create-ad-details > textarea {
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid #D5D5D5;
+    outline: none;
+    padding: 10px;
+}
+
+.create-ad-details > select {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #D5D5D5;
+    outline: none;
+}
+
+.negotiable {
+    display: flex;
+    align-items: center;
+}
+
+.negotiable-or {
+    margin: 10px;
+}
+
+.negotiable > p {
+    color: #797979;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.create-ad-button {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Edit ad page */
+
+.edit-ad-bin {
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    position: absolute;
+    margin-bottom: -50px;
+    margin-right: -50px;
+}
+
+.edit-ad-bin > img {
+    height: 30px;
+}
+
+/* ABOUT US PAGE */
+
+.hero-section-about {
+    height: 500px;
+    background-image: url(./images/about-background.png);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section-about > h1 {
+    margin: 0px;
+    color: white;
+    font-size: 40px;
+} 
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-details-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about-details-item > img {
+    height: 220px;
+}
+
+.about-details-item > p {
+    max-width: 400px;
+}
+
+.about-details-item-special {
+    flex-direction: row-reverse;
+}
+
+.about-details > center > a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.about-bottom {
+    height: 300px;
+    text-align: center;
+    background-image: url(./images/about-background-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.about-bottom > h1 {
+    margin: 0px 50px 0px 50px;
+    text-transform: uppercase;
+}
+
+.how-to-write {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px 50px 50px;
+    font-weight: 500;
+
+}
